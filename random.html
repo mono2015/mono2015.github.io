@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<button onclick="myFunction()">点我测试</button>	
+<script>
+function myFunction() {
+  // 用户输入
+  const min = parseInt(prompt("输入最小值: "));
+  const max = parseInt(prompt("输入最大值: "));
+
+  // 生成随机数
+  const a = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  // 显示随机数
+  document.write(`${min} 到 ${max} 的随机数：${a}`);
+}
+</script>
+	
+</body>
+</html>
